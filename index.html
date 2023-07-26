@@ -4,31 +4,715 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    
+
     <title>Document</title>
   </head>
+
   <body>
     <div class="catalogWrapper">
       <div class="catalog__content">
         <div class="catalog__filter">
-            <div class="catalog__sticky">
-                <div class="catalog__filter-container" data-role="filters-container">
-                    <div class="catalog__filter-list" data-role="filter-list">
-                        <div class="ui-collapse ui-collapse_list" data-id="price">
-                            <a href="#" class="ui-link ui-collapse__link-left ui-collapse-link ui-collapse__link_list ui-collapse__link_in">
-                                <i class="fa-solid fa-arrow-up ui-collapse__icon ui-collapse__icon_left ui-collapse__icon_down"></i>
-                                
-                                <span class="ui-collapse__link-text">Prix</span>
-                            </a>
-                        </div>
+          <div class="catalog__sticky">
+            <div
+              class="catalog__filter-container"
+              data-role="filters-container"
+            >
+              <div class="catalog__filter-list" data-role="filter-list">
+                <div class="ui-collapse ui-collapse_list" data-id="color">
+                  <a
+                    href="#"
+                    class="ui-link ui-collapse__link-left ui-collapse-link ui-collapse__link_list ui-collapse__link_in"
+                  >
+                    <img
+                      src="./arrow-up.svg"
+                      id="foo"
+                      class="fa-solid fa-arrow-up ui-collapse__icon ui-collapse__icon_left ui-collapse__icon_down"
+                    />
+                    <span class="ui-collapse__link-text">Prix</span>
+                  </a>
+
+                  <div
+                    class="ui-collapse__content ui-collapse__content_list ui-collapse__content_default-in"
+                  >
+                    <div>
+                      <div
+                        class="ui-checkbox-group ui-checkbox-group_list"
+                        id="group"
+                      >
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Noir
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Blanc
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Gris
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <a
+                          href="#"
+                          class="ui-link ui-link_red ui-link_pseudolink ui-list-controls__link ui-list-controls__link_clear"
+                          >Réinitialisation</a
+                        >
+                      </div>
                     </div>
-                    <div class="catalog__filter-button"></div>
+                  </div>
                 </div>
+                <div
+                  class="ui-collapse ui-collapse_list"
+                  data-id="wheels"
+                  style="margin-top: 140px"
+                >
+                  <a
+                    href="#"
+                    class="ui-link ui-collapse__link-left ui-collapse-link ui-collapse__link_list ui-collapse__link_in"
+                  >
+                    <img
+                      src="./arrow-up.svg"
+                      id="foo"
+                      class="fa-solid fa-arrow-up ui-collapse__icon ui-collapse__icon_left ui-collapse__icon_down"
+                    />
+                    <span class="ui-collapse__link-text">Roues</span>
+                  </a>
+
+                  <div
+                    class="ui-collapse__content ui-collapse__content_list ui-collapse__content_default-in"
+                  >
+                    <div>
+                      <div class="ui-checkbox-group ui-checkbox-group_list">
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >avec roues
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >sans roues
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+
+                        <a
+                          href="#"
+                          class="ui-link ui-link_red ui-link_pseudolink ui-list-controls__link ui-list-controls__link_clear"
+                          >Réinitialisation</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="ui-collapse ui-collapse_list"
+                  data-id="diagonal"
+                  style="margin-top: 140px"
+                >
+                  <a
+                    href="#"
+                    class="ui-link ui-collapse__link-left ui-collapse-link ui-collapse__link_list ui-collapse__link_in"
+                  >
+                    <img
+                      src="./arrow-up.svg"
+                      id="foo"
+                      class="fa-solid fa-arrow-up ui-collapse__icon ui-collapse__icon_left ui-collapse__icon_down"
+                    />
+                    <span class="ui-collapse__link-text">Diagonale</span>
+                  </a>
+
+                  <div
+                    class="ui-collapse__content ui-collapse__content_list ui-collapse__content_default-in"
+                  >
+                    <div>
+                      <div class="ui-checkbox-group ui-checkbox-group_list">
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Diagonale 18" - 26"
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Diagonale 30" - 65"
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Diagonale 32" - 65"
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Diagonale 32" - 70"
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Diagonale 32" - 75"
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Diagonale 40" - 70"
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Diagonale 40" - 80"
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Diagonale 50" - 83"
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Diagonale 50" - 86"
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Diagonale 60" - 100"
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <a
+                          href="#"
+                          class="ui-link ui-link_red ui-link_pseudolink ui-list-controls__link ui-list-controls__link_clear"
+                          >Réinitialisation</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="ui-collapse ui-collapse_list"
+                  data-id="load"
+                  style="margin-top: 300px"
+                >
+                  <a
+                    href="#"
+                    class="ui-link ui-collapse__link-left ui-collapse-link ui-collapse__link_list ui-collapse__link_in"
+                  >
+                    <img
+                      src="./arrow-up.svg"
+                      id="foo"
+                      class="fa-solid fa-arrow-up ui-collapse__icon ui-collapse__icon_left ui-collapse__icon_down"
+                    />
+                    <span class="ui-collapse__link-text">Poids maximum</span>
+                  </a>
+
+                  <div
+                    class="ui-collapse__content ui-collapse__content_list ui-collapse__content_default-in"
+                  >
+                    <div>
+                      <div class="ui-checkbox-group ui-checkbox-group_list">
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Poids maximum de la TV
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >Charge maximale
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+
+                        <a
+                          href="#"
+                          class="ui-link ui-link_red ui-link_pseudolink ui-list-controls__link ui-list-controls__link_clear"
+                          >Réinitialisation</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="ui-collapse ui-collapse_list"
+                  data-id="tvcounter"
+                  style="margin-top: 140px"
+                >
+                  <a
+                    href="#"
+                    class="ui-link ui-collapse__link-left ui-collapse-link ui-collapse__link_list ui-collapse__link_in"
+                  >
+                    <img
+                      src="./arrow-up.svg"
+                      id="foo"
+                      class="fa-solid fa-arrow-up ui-collapse__icon ui-collapse__icon_left ui-collapse__icon_down"
+                    />
+                    <span class="ui-collapse__link-text"
+                      >Nombre de moniteurs par rack</span
+                    >
+                  </a>
+
+                  <div
+                    class="ui-collapse__content ui-collapse__content_list ui-collapse__content_default-in"
+                  >
+                    <div>
+                      <div class="ui-checkbox-group ui-checkbox-group_list">
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >1 TV
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >2 TV
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <label class="ui-checkbox ui-checkbox_list">
+                          <span
+                            >4 TV
+                            <span class="catalog-filter-count">3</span>
+                          </span>
+                          <input
+                            type="checkbox"
+                            class="ui-checkbox__input ui-checkbox__input_list"
+                          />
+                          <span
+                            class="ui-checkbox__box ui-checkbox__box_list"
+                          ></span>
+                        </label>
+                        <a
+                          href="#"
+                          class="ui-link ui-link_red ui-link_pseudolink ui-list-controls__link ui-list-controls__link_clear"
+                          >Réinitialisation</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__filter-button"></div>
             </div>
+          </div>
         </div>
-        <div class="catalog__items"></div>
+        <div class="products-page__list">
+          <div class="products-page__top-block">
+            <div class="top-filters">
+              <div class="top-filters_wrap" data-role="sort-filter-wrap">
+                <div class="top-filter popover-wrapper" data-id="order">
+                  <span class="top-filter__label">Triage:</span>
+                  <a class="ui-link ui-link_blue">
+                    <span class="top-filter__selected"
+                      >D'abord les moins chers</span
+                    >
+                    <img
+                      src="./arrow-up.svg"
+                      alt="arrow"
+                      class="fa-arrow-up sort-icon"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="top-filters__view-mode"
+                  data-role="catalog-view-mode-form"
+                >
+                  <input
+                    type="radio"
+                    id="mode-tile--iSP"
+                    name="catalog-view-mode---iSP"
+                    value="tile"
+                    class="top-filters__view-mode-input"
+                  />
+                  <label
+                    for="mode-tile--iSP"
+                    class="top-filters__view-mode-label top-filters__view-mode-label_tile"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="mode-tile--iSP"
+                    class="top-filters__view-mode-input"
+                    name="catalog-view-mode---iSP"
+                    value="simple"
+                    checked
+                  />
+                  <label
+                    class="top-filters__view-mode-label top-filters__view-mode-label_simple"
+                    for="mode-simple--iSP"
+                  ></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products-list">
+            <div class="products-list__content" data-result-container>
+              <div
+                class="catalog-products view-simple"
+                data-catalog-products
+                data-slider-available
+              >
+                <div
+                  data-id="product"
+                  class="catalog-product ui-button-widget"
+                  data-product="a9069bce-37c6-11ed-901f-00155d8ed20b"
+                  data-code="5074554"
+                  data-preview-slider-inited="1"
+                >
+                  <div class="catalog-product__image">
+                    <a
+                      class="catalog-product__image-link"
+                      href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/"
+                      data-toggle-slider=""
+                      ><img src="https://onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_200x.png?v=1690291001%20200w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_300x.png?v=1690291001%20300w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_400x.png?v=1690291001%20400w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_600x.png?v=1690291001%20600w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_800x.png?v=1690291001%20800w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_900x.png?v=1690291001%20900w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_1000x.png?v=1690291001%201000w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_1200x.png?v=1690291001%201200w" alt="stand"></a>
+                  </div>
+                  <a
+                    class="catalog-product__name ui-link ui-link_black"
+                    href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/"
+                    ><span
+                      >TS1891 Noir, Support sur pied à roulettes pour TV de 50" à 90", 100 kg max</span
+                    ></a
+                  >
+                  
+                  <div class="catalog-product__stat">
+                    <span class="compare-checkbox"
+                      ><label class="ui-checkbox"
+                        ><span>Comparer</span
+                        ><input
+                          type="checkbox"
+                          class="ui-checkbox__input" /><span
+                          class="ui-checkbox__box"
+                        ></span></label></span
+                    ><a
+                      class="catalog-product__rating ui-link ui-link_black"
+                      href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/opinion/"
+                      data-rating="4"
+                      ><i></i><i></i><i></i><i></i><i></i>124</a
+                    ><a
+                      class="catalog-product__service-rating ui-link ui-link_black"
+                      href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/service-rating/"
+                      ><i
+                        class="catalog-product__service-rating-icon catalog-product__service-rating-icon_5"
+                      ></i
+                      >98,82</a
+                    ><a
+                      class="catalog-product__comment ui-link ui-link_black"
+                      href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/communicator/"
+                      ><i class="catalog-product__comment-icon"></i>&nbsp;4</a
+                    >
+                  </div>
+                  <div
+                    class="product-buy product-buy_one-line catalog-product__buy"
+                  >
+                    <div
+                      class="product-buy__price-wrap product-buy__price-wrap_interactive"
+                      data-gtm-vis-recent-on-screen-32166084_1551="4229"
+                      data-gtm-vis-first-on-screen-32166084_1551="4229"
+                      data-gtm-vis-total-visible-time-32166084_1551="100"
+                      data-gtm-vis-has-fired-32166084_1551="1"
+                    >
+                      <div class="product-buy__price">16 199&nbsp;₽</div>
+                      <div class="product-buy__hint"></div>
+                      <div class="product-buy__sub">от 1 579&nbsp;₽/ мес.</div>
+                    </div>
+                    <button
+                      class="button-ui button-ui_white button-ui_icon wishlist-btn"
+                    >
+                    <img src="./heart.svg" alt=""></button
+                    ><button
+                      class="button-ui buy-btn button-ui_brand button-ui_passive"
+                    >
+                    Acheter
+                    </button>
+                  </div>
+                  
+                </div>
+                <div data-id="product" class="catalog-product ui-button-widget" data-product="a9069bce-37c6-11ed-901f-00155d8ed20b" data-code="5074554" data-preview-slider-inited="1">
+                  <div class="catalog-product__image">
+                    <a class="catalog-product__image-link" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/" data-toggle-slider=""><img src="https://onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_200x.png?v=1690291001%20200w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_300x.png?v=1690291001%20300w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_400x.png?v=1690291001%20400w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_600x.png?v=1690291001%20600w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_800x.png?v=1690291001%20800w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_900x.png?v=1690291001%20900w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_1000x.png?v=1690291001%201000w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_1200x.png?v=1690291001%201200w" alt="stand"></a>
+                  </div>
+                  <a class="catalog-product__name ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/"><span>TS1891 Noir, Support sur pied à roulettes pour TV de 50" à 90", 100 kg max</span></a>
+                  
+                  <div class="catalog-product__stat">
+                    <span class="compare-checkbox"><label class="ui-checkbox"><span>Comparer</span><input type="checkbox" class="ui-checkbox__input"><span class="ui-checkbox__box"></span></label></span><a class="catalog-product__rating ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/opinion/" data-rating="4"><i></i><i></i><i></i><i></i><i></i>124</a><a class="catalog-product__service-rating ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/service-rating/"><i class="catalog-product__service-rating-icon catalog-product__service-rating-icon_5"></i>98,82</a><a class="catalog-product__comment ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/communicator/"><i class="catalog-product__comment-icon"></i>&nbsp;4</a>
+                  </div>
+                  <div class="product-buy product-buy_one-line catalog-product__buy">
+                    <div class="product-buy__price-wrap product-buy__price-wrap_interactive" data-gtm-vis-recent-on-screen-32166084_1551="4229" data-gtm-vis-first-on-screen-32166084_1551="4229" data-gtm-vis-total-visible-time-32166084_1551="100" data-gtm-vis-has-fired-32166084_1551="1">
+                      <div class="product-buy__price">16 199&nbsp;₽</div>
+                      <div class="product-buy__hint"></div>
+                      <div class="product-buy__sub">от 1 579&nbsp;₽/ мес.</div>
+                    </div>
+                    <button class="button-ui button-ui_white button-ui_icon wishlist-btn">
+                    <img src="./heart.svg" alt=""></button><button class="button-ui buy-btn button-ui_brand button-ui_passive">
+                    Acheter
+                    </button>
+                  </div>
+                  
+                </div>
+                <div data-id="product" class="catalog-product ui-button-widget" data-product="a9069bce-37c6-11ed-901f-00155d8ed20b" data-code="5074554" data-preview-slider-inited="1">
+                  <div class="catalog-product__image">
+                    <a class="catalog-product__image-link" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/" data-toggle-slider=""><img src="https://onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_200x.png?v=1690291001%20200w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_300x.png?v=1690291001%20300w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_400x.png?v=1690291001%20400w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_600x.png?v=1690291001%20600w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_800x.png?v=1690291001%20800w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_900x.png?v=1690291001%20900w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_1000x.png?v=1690291001%201000w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_1200x.png?v=1690291001%201200w" alt="stand"></a>
+                  </div>
+                  <a class="catalog-product__name ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/"><span>TS1891 Noir, Support sur pied à roulettes pour TV de 50" à 90", 100 kg max</span></a>
+                  
+                  <div class="catalog-product__stat">
+                    <span class="compare-checkbox"><label class="ui-checkbox"><span>Comparer</span><input type="checkbox" class="ui-checkbox__input"><span class="ui-checkbox__box"></span></label></span><a class="catalog-product__rating ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/opinion/" data-rating="4"><i></i><i></i><i></i><i></i><i></i>124</a><a class="catalog-product__service-rating ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/service-rating/"><i class="catalog-product__service-rating-icon catalog-product__service-rating-icon_5"></i>98,82</a><a class="catalog-product__comment ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/communicator/"><i class="catalog-product__comment-icon"></i>&nbsp;4</a>
+                  </div>
+                  <div class="product-buy product-buy_one-line catalog-product__buy">
+                    <div class="product-buy__price-wrap product-buy__price-wrap_interactive" data-gtm-vis-recent-on-screen-32166084_1551="4229" data-gtm-vis-first-on-screen-32166084_1551="4229" data-gtm-vis-total-visible-time-32166084_1551="100" data-gtm-vis-has-fired-32166084_1551="1">
+                      <div class="product-buy__price">16 199&nbsp;₽</div>
+                      <div class="product-buy__hint"></div>
+                      <div class="product-buy__sub">от 1 579&nbsp;₽/ мес.</div>
+                    </div>
+                    <button class="button-ui button-ui_white button-ui_icon wishlist-btn">
+                    <img src="./heart.svg" alt=""></button><button class="button-ui buy-btn button-ui_brand button-ui_passive">
+                    Acheter
+                    </button>
+                  </div>
+                  
+                </div>
+                <div data-id="product" class="catalog-product ui-button-widget" data-product="a9069bce-37c6-11ed-901f-00155d8ed20b" data-code="5074554" data-preview-slider-inited="1">
+                  <div class="catalog-product__image">
+                    <a class="catalog-product__image-link" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/" data-toggle-slider=""><img src="https://onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_200x.png?v=1690291001%20200w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_300x.png?v=1690291001%20300w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_400x.png?v=1690291001%20400w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_600x.png?v=1690291001%20600w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_800x.png?v=1690291001%20800w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_900x.png?v=1690291001%20900w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_1000x.png?v=1690291001%201000w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_1200x.png?v=1690291001%201200w" alt="stand"></a>
+                  </div>
+                  <a class="catalog-product__name ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/"><span>TS1891 Noir, Support sur pied à roulettes pour TV de 50" à 90", 100 kg max</span></a>
+                  
+                  <div class="catalog-product__stat">
+                    <span class="compare-checkbox"><label class="ui-checkbox"><span>Comparer</span><input type="checkbox" class="ui-checkbox__input"><span class="ui-checkbox__box"></span></label></span><a class="catalog-product__rating ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/opinion/" data-rating="4"><i></i><i></i><i></i><i></i><i></i>124</a><a class="catalog-product__service-rating ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/service-rating/"><i class="catalog-product__service-rating-icon catalog-product__service-rating-icon_5"></i>98,82</a><a class="catalog-product__comment ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/communicator/"><i class="catalog-product__comment-icon"></i>&nbsp;4</a>
+                  </div>
+                  <div class="product-buy product-buy_one-line catalog-product__buy">
+                    <div class="product-buy__price-wrap product-buy__price-wrap_interactive" data-gtm-vis-recent-on-screen-32166084_1551="4229" data-gtm-vis-first-on-screen-32166084_1551="4229" data-gtm-vis-total-visible-time-32166084_1551="100" data-gtm-vis-has-fired-32166084_1551="1">
+                      <div class="product-buy__price">16 199&nbsp;₽</div>
+                      <div class="product-buy__hint"></div>
+                      <div class="product-buy__sub">от 1 579&nbsp;₽/ мес.</div>
+                    </div>
+                    <button class="button-ui button-ui_white button-ui_icon wishlist-btn">
+                    <img src="./heart.svg" alt=""></button><button class="button-ui buy-btn button-ui_brand button-ui_passive">
+                    Acheter
+                    </button>
+                  </div>
+                  
+                </div>
+                <div data-id="product" class="catalog-product ui-button-widget" data-product="a9069bce-37c6-11ed-901f-00155d8ed20b" data-code="5074554" data-preview-slider-inited="1">
+                  <div class="catalog-product__image">
+                    <a class="catalog-product__image-link" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/" data-toggle-slider=""><img src="https://onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_200x.png?v=1690291001%20200w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_300x.png?v=1690291001%20300w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_400x.png?v=1690291001%20400w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_600x.png?v=1690291001%20600w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_800x.png?v=1690291001%20800w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_900x.png?v=1690291001%20900w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_1000x.png?v=1690291001%201000w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_1200x.png?v=1690291001%201200w" alt="stand"></a>
+                  </div>
+                  <a class="catalog-product__name ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/"><span>TS1891 Noir, Support sur pied à roulettes pour TV de 50" à 90", 100 kg max</span></a>
+                  
+                  <div class="catalog-product__stat">
+                    <span class="compare-checkbox"><label class="ui-checkbox"><span>Comparer</span><input type="checkbox" class="ui-checkbox__input"><span class="ui-checkbox__box"></span></label></span><a class="catalog-product__rating ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/opinion/" data-rating="4"><i></i><i></i><i></i><i></i><i></i>124</a><a class="catalog-product__service-rating ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/service-rating/"><i class="catalog-product__service-rating-icon catalog-product__service-rating-icon_5"></i>98,82</a><a class="catalog-product__comment ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/communicator/"><i class="catalog-product__comment-icon"></i>&nbsp;4</a>
+                  </div>
+                  <div class="product-buy product-buy_one-line catalog-product__buy">
+                    <div class="product-buy__price-wrap product-buy__price-wrap_interactive" data-gtm-vis-recent-on-screen-32166084_1551="4229" data-gtm-vis-first-on-screen-32166084_1551="4229" data-gtm-vis-total-visible-time-32166084_1551="100" data-gtm-vis-has-fired-32166084_1551="1">
+                      <div class="product-buy__price">16 199&nbsp;₽</div>
+                      <div class="product-buy__hint"></div>
+                      <div class="product-buy__sub">от 1 579&nbsp;₽/ мес.</div>
+                    </div>
+                    <button class="button-ui button-ui_white button-ui_icon wishlist-btn">
+                    <img src="./heart.svg" alt=""></button><button class="button-ui buy-btn button-ui_brand button-ui_passive">
+                    Acheter
+                    </button>
+                  </div>
+                  
+                </div>
+                <div data-id="product" class="catalog-product ui-button-widget" data-product="a9069bce-37c6-11ed-901f-00155d8ed20b" data-code="5074554" data-preview-slider-inited="1">
+                  <div class="catalog-product__image">
+                    <a class="catalog-product__image-link" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/" data-toggle-slider=""><img src="https://onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_200x.png?v=1690291001%20200w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_300x.png?v=1690291001%20300w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_400x.png?v=1690291001%20400w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_600x.png?v=1690291001%20600w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_800x.png?v=1690291001%20800w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_900x.png?v=1690291001%20900w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_1000x.png?v=1690291001%201000w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_1200x.png?v=1690291001%201200w" alt="stand"></a>
+                  </div>
+                  <a class="catalog-product__name ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/"><span>TS1891 Noir, Support sur pied à roulettes pour TV de 50" à 90", 100 kg max</span></a>
+                  
+                  <div class="catalog-product__stat">
+                    <span class="compare-checkbox"><label class="ui-checkbox"><span>Comparer</span><input type="checkbox" class="ui-checkbox__input"><span class="ui-checkbox__box"></span></label></span><a class="catalog-product__rating ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/opinion/" data-rating="4"><i></i><i></i><i></i><i></i><i></i>124</a><a class="catalog-product__service-rating ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/service-rating/"><i class="catalog-product__service-rating-icon catalog-product__service-rating-icon_5"></i>98,82</a><a class="catalog-product__comment ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/communicator/"><i class="catalog-product__comment-icon"></i>&nbsp;4</a>
+                  </div>
+                  <div class="product-buy product-buy_one-line catalog-product__buy">
+                    <div class="product-buy__price-wrap product-buy__price-wrap_interactive" data-gtm-vis-recent-on-screen-32166084_1551="4229" data-gtm-vis-first-on-screen-32166084_1551="4229" data-gtm-vis-total-visible-time-32166084_1551="100" data-gtm-vis-has-fired-32166084_1551="1">
+                      <div class="product-buy__price">16 199&nbsp;₽</div>
+                      <div class="product-buy__hint"></div>
+                      <div class="product-buy__sub">от 1 579&nbsp;₽/ мес.</div>
+                    </div>
+                    <button class="button-ui button-ui_white button-ui_icon wishlist-btn">
+                    <img src="./heart.svg" alt=""></button><button class="button-ui buy-btn button-ui_brand button-ui_passive">
+                    Acheter
+                    </button>
+                  </div>
+                  
+                </div>
+                <div data-id="product" class="catalog-product ui-button-widget" data-product="a9069bce-37c6-11ed-901f-00155d8ed20b" data-code="5074554" data-preview-slider-inited="1">
+                  <div class="catalog-product__image">
+                    <a class="catalog-product__image-link" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/" data-toggle-slider=""><img src="https://onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_200x.png?v=1690291001%20200w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_300x.png?v=1690291001%20300w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_400x.png?v=1690291001%20400w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_600x.png?v=1690291001%20600w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_800x.png?v=1690291001%20800w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_900x.png?v=1690291001%20900w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_1000x.png?v=1690291001%201000w,%20//onkron.de/cdn/shop/files/TS1891_0_50f48d14-095d-4c27-8346-ba224485b263_1200x.png?v=1690291001%201200w" alt="stand"></a>
+                  </div>
+                  <a class="catalog-product__name ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/"><span>TS1891 Noir, Support sur pied à roulettes pour TV de 50" à 90", 100 kg max</span></a>
+                  
+                  <div class="catalog-product__stat">
+                    <span class="compare-checkbox"><label class="ui-checkbox"><span>Comparer</span><input type="checkbox" class="ui-checkbox__input"><span class="ui-checkbox__box"></span></label></span><a class="catalog-product__rating ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/opinion/" data-rating="4"><i></i><i></i><i></i><i></i><i></i>124</a><a class="catalog-product__service-rating ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/service-rating/"><i class="catalog-product__service-rating-icon catalog-product__service-rating-icon_5"></i>98,82</a><a class="catalog-product__comment ui-link ui-link_black" href="/product/a9069bce37c6ed20/141-noutbuk-dexp-aquilon-serebristyj/communicator/"><i class="catalog-product__comment-icon"></i>&nbsp;4</a>
+                  </div>
+                  <div class="product-buy product-buy_one-line catalog-product__buy">
+                    <div class="product-buy__price-wrap product-buy__price-wrap_interactive" data-gtm-vis-recent-on-screen-32166084_1551="4229" data-gtm-vis-first-on-screen-32166084_1551="4229" data-gtm-vis-total-visible-time-32166084_1551="100" data-gtm-vis-has-fired-32166084_1551="1">
+                      <div class="product-buy__price">16 199&nbsp;₽</div>
+                      <div class="product-buy__hint"></div>
+                      <div class="product-buy__sub">от 1 579&nbsp;₽/ мес.</div>
+                    </div>
+                    <button class="button-ui button-ui_white button-ui_icon wishlist-btn">
+                    <img src="./heart.svg" alt=""></button><button class="button-ui buy-btn button-ui_brand button-ui_passive">
+                    Acheter
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
-  <script src="https://kit.fontawesome.com/70bf0f3a41.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/70bf0f3a41.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./index.js"></script>
 </html>
